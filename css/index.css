@@ -1,1 +1,258 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Variables */
+/*mixin */
+.container {
+  margin: 50px auto;
+  width: 1000px;
+  font-family: Tahoma;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+nav a {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: purple;
+}
+.main1 {
+  display: flex;
+  border-top: 3px dashed gold;
+}
+.main1 .aboutme1 {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main1 .aboutme1 h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.main1 .aboutme1 h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.main1 .aboutme1 button {
+  background: purple;
+  vertical-align: top;
+  padding: 0.9% 5%;
+  color: gold;
+}
+.main1 .statement {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 5%;
+}
+.moreaboutme {
+  border-top: 3px dashed gold;
+  display: flex;
+  margin-top: 5%;
+  font-size: 20px;
+  color: purple;
+  border-bottom: 3px dashed gold;
+}
+.moreaboutme .second h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.moreaboutme .body1 h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.moreaboutme .body1 {
+  margin-left: 5%;
+}
+.aboutme {
+  display: flex;
+  margin-top: 5%;
+  font-size: 20px;
+  color: purple;
+  border-bottom: 3px dashed gold;
+}
+.aboutme .one {
+  color: purple;
+}
+.aboutme .one h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.aboutme .contactme h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.aboutme .contactme {
+  margin: 0 auto;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-top: 5%;
+  color: purple;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .main1 img {
+    display: none;
+  }
+  header nav a {
+    color: purple;
+  }
+}
