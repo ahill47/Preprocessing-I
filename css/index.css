@@ -144,7 +144,7 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 5%;
 }
 nav a {
@@ -152,10 +152,15 @@ nav a {
   text-decoration: none;
   font-size: 1.4rem;
   color: purple;
+  padding: 12px 28px;
+  background-color: gold;
+  border-radius: 12px;
 }
 .main1 {
   display: flex;
   border-top: 3px dashed gold;
+  margin-top:auto;
+  padding:5%;
 }
 .main1 .aboutme1 {
   margin-left: 5%;
@@ -179,6 +184,8 @@ nav a {
   vertical-align: top;
   padding: 0.9% 5%;
   color: gold;
+  border-radius: 12px;
+
 }
 .main1 .statement {
   display: flex;
@@ -191,7 +198,8 @@ nav a {
 .moreaboutme {
   border-top: 3px dashed gold;
   display: flex;
-  margin-top: 5%;
+  flex-direction:column;
+  
   font-size: 20px;
   color: purple;
   border-bottom: 3px dashed gold;
@@ -204,11 +212,10 @@ nav a {
   text-align: center;
   font-size: 2rem;
 }
-.moreaboutme .body1 {
-  margin-left: 5%;
-}
+
 .aboutme {
   display: flex;
+  flex-direction: column;
   margin-top: 5%;
   font-size: 20px;
   color: purple;
@@ -227,8 +234,10 @@ nav a {
   font-size: 2rem;
   margin-bottom: 2%;
 }
-.aboutme .contactme {
+.aboutme .contactme  {
   margin: 0 auto;
+  text-align: center;
+  padding:5%;
 }
 footer {
   display: flex;
@@ -254,5 +263,12 @@ footer {
   }
   header nav a {
     color: purple;
+  
+  }
+  .moreaboutme{
+    text-align: center;
+  }
+  .aboutme{
+    text-align: center;
   }
 }
