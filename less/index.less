@@ -56,4 +56,167 @@ table {
 html, body {
     height: 100%;
 }
+/* Variables */
+@font-family: Tahoma;
+@grey-color:#dcdcd2;
+@link-color: #005792;
+@font-size1:40px;
+@font-size2:20px;
+@background:#A9A9A9;
+@bottom:5%;
+@favcolor: purple;
+
+/*mixin */
+.Standard-Display(){
+	display:flex;
+	justify-content: center;
+}
+
+.Standard-Flex(){
+	text-align: center;
+	font-size:2.0rem;
+}
+
+.container{
+	margin:50px auto;
+	width:1000px;
+	font-family: @font-family;
+	
+	
+}
+
+ nav {
+	 display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	 margin-bottom: @bottom;
+	
+
+	 a{
+		margin:20px;
+		text-decoration: none;
+		font-size: 1.4rem;
+		color:@favcolor;
+		  
+	 }
+}
+.main1{
+	display:flex;
+	border-top: 3px dashed gold;
+
+	
+}
+
+.main1 .aboutme1{
+	margin-left:5%;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	
+	
+
+	  
+	
+	h1{
+		font-size: @font-size1;
+		text-align: center;
+		margin-bottom:@bottom;
+	}
+	h3{
+		font-size: @font-size2;
+		text-align: center;
+		margin-bottom: @bottom;
+	}
+	button{
+		background:@favcolor;
+		vertical-align: top;	
+		padding: .9% 5%;
+		color:gold;
+	}
+}
+
+.main1 .statement{
+	.Standard-Display();
+	margin-top:@bottom;
+	text-align: center;
+	width:50%;
+	margin-bottom:@bottom;
+}
+.moreaboutme{
+	border-top: 3px dashed gold;
+	display:flex;
+	margin-top:@bottom;
+	font-size:@font-size2;
+	color:@favcolor;
+	border-bottom: 3px dashed gold;
+}
+.moreaboutme .second h2{
+	.Standard-Flex();
+}
+.moreaboutme .body1 h2{
+	.Standard-Flex();
+}
+.moreaboutme .body1{
+	margin-left:@bottom;
+}
+.aboutme{
+	display:flex;
+	margin-top:@bottom;
+	font-size:@font-size2;
+	color:@favcolor;
+	border-bottom: 3px dashed gold;
+	
+}
+.aboutme .one{
+	color:@favcolor;
+}
+.aboutme .one h2{
+		
+		.Standard-Flex();
+		margin-bottom:2%;
+}.aboutme .contactme h2{
+		.Standard-Flex();
+		margin-bottom:2%;
+}
+.aboutme .contactme{
+	margin:0 auto;
+}
+footer{
+	.Standard-Display();
+	align-items: center;
+	font-size: 1.4rem;
+	margin-top:@bottom;
+	color: @favcolor;
+
+}
+@media (max-width:500px) {
+	.container {
+		width: 100%;
+		margin: auto;
+	  }
+	nav{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		align-items: center;
+
+	}
+	.main1 img{
+		display:none;
+
+	}
+	
+	header nav a {
+		color:gold;
+        
+	  }
+
+
+	}
+
+
+
+
+
 
